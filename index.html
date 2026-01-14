@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Perkenalan</h3>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="isStudent"></p>
+    <p id="sum"></p>
+    <p id="difference"></p>
+    <p id="product"></p>
+    <p id="quotient"></p>
+    <p id="score"></p>
+    <p id="grade"></p>
+    <script>
+      let name = "Prabu Panedya Firdaus Putra Aglar";
+      let age = 15;
+      let isStudent = true;
+
+      let a = 15;
+      let b = 20;
+      let sum = a + b;
+      let difference = b - a;
+      let product = a * b;
+      let quotient = b / a;
+
+      let score = 85;
+
+      document.getElementById("name").innerText = "Nama: " + name;
+      document.getElementById("age").innerText = "Umur: " + age + " tahun";
+      document.getElementById("isStudent").innerText =
+        "Apakah saya seorang pelajar? " + isStudent;
+
+      document.getElementById("sum").innerText = a + " + " + b + " = " + sum;
+      document.getElementById("difference").innerText =
+        b + " - " + a + " = " + difference;
+      document.getElementById("product").innerText =
+        a + " * " + b + " = " + product;
+      document.getElementById("quotient").innerText =
+        b + " / " + a + " = " + quotient;
+
+      document.getElementById("score").innerText = "Nilai saya: " + score;
+      if (score >= 90) {
+        document.getElementById("grade").innerText = "Grade: A";
+      } else if (score >= 80) {
+        document.getElementById("grade").innerText = "Grade: B";
+      } else if (score >= 70) {
+        document.getElementById("grade").innerText = "Grade: C";
+      } else if (score >= 60) {
+        document.getElementById("grade").innerText = "Grade: D";
+      } else {
+        document.getElementById("grade").innerText = "Grade: F";
+      }
+    </script>
+  </body>
+</html>
