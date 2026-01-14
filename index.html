@@ -44,17 +44,12 @@
         b + " / " + a + " = " + quotient;
 
       document.getElementById("score").innerText = "Nilai saya: " + score;
-      if (score >= 90) {
-        document.getElementById("grade").innerText = "Grade: A";
-      } else if (score >= 80) {
-        document.getElementById("grade").innerText = "Grade: B";
-      } else if (score >= 70) {
-        document.getElementById("grade").innerText = "Grade: C";
-      } else if (score >= 60) {
-        document.getElementById("grade").innerText = "Grade: D";
+      if (score > 75) {
+        document.getElementById("grade").innerText = "Anda Lulus";
       } else {
-        document.getElementById("grade").innerText = "Grade: F";
+        document.getElementById("grade").innerText = "Anda Tidak Lulus";
       }
     </script>
   </body>
 </html>
+
